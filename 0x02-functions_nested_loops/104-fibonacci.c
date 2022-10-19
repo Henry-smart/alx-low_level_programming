@@ -21,9 +21,7 @@ int numLength(int num)
 	{
 
 	num = num / 10;
-
 	length += 1;
-
 	}
 
 	return (length);
@@ -50,45 +48,25 @@ int main(void)
 	for (count = 1; count <= 98; ++count)
 
 	{
-
 	if (f1o > 0)
-
 	printf("%lu", f1o);
-
 	initial0s = numLength(mx) - 1 - numLength(f1);
-
 	while (f1o > 0 && initial0s > 0)
-
 	{
-
 	printf("%d", 0);
-
 	--initial0s;
-
 	}
-
 	printf("%lu", f1);
-
 	sum = (f1 + f2) % mx;
-
 	sumo = f1o + f2o + (f1 + f2) / mx;
-
 	f1 = f2;
-
 	f1o = f2o;
-
 	f2 = sum;
-
 	f2o = sumo;
-
 	if (count != 98)
-
 	printf(", ");
-
 	else
-
 	printf("\n");
-
 	}
 
 	return (0);
